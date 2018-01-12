@@ -7,7 +7,7 @@ describe("a function for Library Fine", () => {
     expect(libraryFine("1 8 2018\n1 7 2018")).toBe(15)
     expect(libraryFine("1 8 2018\n1 6 2018")).toBe(30)
   })
-  it("should return 500 for book returned 1 month late", () => {
+  it("should return fee for overdue book in same year", () => {
     expect(libraryFine("2 8 2018\n1 8 2018")).toBe(500)
   })
 })
